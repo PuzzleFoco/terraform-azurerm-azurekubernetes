@@ -33,4 +33,8 @@ resource "azurerm_kubernetes_cluster" "aks_cluster" {
     tags = {
         Environment = var.tag_environment
     }
+
+    kube_dashboard {
+        enabled = var.kube_dashboard
+    }
 }

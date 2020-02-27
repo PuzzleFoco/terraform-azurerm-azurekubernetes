@@ -50,3 +50,8 @@ variable "vm_size" {
     available Values: https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-general
     */
 }
+
+variable "kube_dashboard" {
+    type    = boolean
+    default = false
+}
