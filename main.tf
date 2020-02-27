@@ -25,6 +25,11 @@ resource "azurerm_kubernetes_cluster" "aks_cluster" {
         vm_size     = var.vm_size
     }
 
+    addon_profile {
+        kube_dashboard {
+            enabled = var.kube_dashboard
+    }
+
     service_principal {
         client_id       = var.client_id
         client_secret   = var.client_secret
@@ -32,10 +37,5 @@ resource "azurerm_kubernetes_cluster" "aks_cluster" {
 
     tags = {
         Environment = var.tag_environment
-    }
-
-    addon_profile {
-        kube_dashboard {
-            enabled = var.kube_dashboard
     }
 }
