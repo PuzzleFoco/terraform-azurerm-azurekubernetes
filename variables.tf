@@ -52,6 +52,6 @@ variable "vm_size" {
 }
 
 variable "kube_dashboard" {
-    type    = boolean
+    type    = bool
     default = false
 }
