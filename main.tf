@@ -1,13 +1,3 @@
-/*
- * Created Date: 14.01.2020
- * Author: Fabius Engel (fabius.engel@msg.group)
- * -----
- * Last Modified: 15.01.2020 11:28:40
- * Modified By: Fabius Engel (fabius.engel@msg.group)
- * -----
- * Copyright (c) 2020 msg nexinsure ag
- */
-
 resource "azurerm_resource_group" "resource_group" {
     name        = var.resource_group_name
     location    = var.location
